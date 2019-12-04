@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chalermkhwan Nasritha</title>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f18235f14d.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- Mobile Nav Version -->
+
+<div id="mobileNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="#project">Projects</a>
+    <a href="#footer">Contact Me</a>
+  </div>
+</div>
+
+<div class="myNavOpen">
+  <p><i class="fas fa-seedling"></i>CN</p>
+  <span onclick="openNav()">&#9776;</span>
+</div>
+
+  <!-- Desktop Nav Version -->
+  <navbar>
+    <div class="desktop-nav" id="desktop-nav">
+      <ul class="inner-topnav">
+        <li><a href="#"><i class="fas fa-seedling"></i></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#footer">Contact Me</a></li>
+      </ul>
+    </div>
+
+  </navbar>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="left">
+        <img class="profile-image" src="C:\Users\Owner\BoteLearning\Portfolio\images\profile5.jpg" alt="profile-image">
+
+      </div>
+      <div class="right">
+        <h1 class="heading">Chalermkhwan Nasritha</h1>
+        <h4 class="title">Web Developer</h4>
+        <p class="description">I have a passion for learning and creating new things. </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="project">
+    <div class="project-header">
+      <h2>Projects</h2>
+    </div>
+  <div class="another-wrapper">
+      <div class="column">
+        <div class="card">
+          <img src="C:\Users\Owner\BoteLearning\Portfolio\images\keenokPJ.png" alt="KeenokThai">
+          <div class="card-container">
+            <a href="http://keenokthai.com/" target="_blank"><h5><b>KeenokThai</b></h5></a>
+            <p>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="C:\Users\Owner\BoteLearning\Portfolio\images\mailList.png" alt="mailList">
+          <div class="card-container">
+            <a href="https://thawing-river-51831.herokuapp.com/" target="_blank"><h5><b>Mailing List</b></h5></a>
+            <p>
+              <i class="fab fa-mailchimp"></i>
+              <i class="fab fa-node-js"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="C:\Users\Owner\BoteLearning\Portfolio\images\Todo.png" alt="ToDoList">
+          <div class="card-container">
+            <a href="https://secret-anchorage-79305.herokuapp.com/" target="_blank"><h5><b>To Do List</b></h5></a>
+            <p>
+              <i class="fab fa-node-js"></i>
+              <i class="fas fa-database"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="C:\Users\Owner\BoteLearning\Portfolio\images\simon.png" alt="simongame">
+          <div class="card-container">
+            <a href="https://fast-headland-64597.herokuapp.com/" target="_blank"><h5><b>The Simon Game</b></h5></a>
+            <p>jQuery</p>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+  </section>
+
+
+<!-- Hide Scroll -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("desktop-nav").style.top = "0";
+      } else {
+        document.getElementById("desktop-nav").style.top = "-50%";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+<!-- Toggle Navbar -->
+<script>
+function openNav() {
+  document.getElementById("mobileNav").style.top="0";
+  document.getElementById("mobileNav").style.height = "auto";
+}
+
+function closeNav() {
+  document.getElementById("mobileNav").style.height = "0";
+}
+
+
+</script>
+
+
+
+</body>
+
+
+<footer id="footer">
+<div class="container-fluid">
+  <div class="social-icon"><a href="https://github.com/khwaniiz" target="_blank"><i class="fab fa-github"></i></a></div>
+  <div class="social-icon"><a href="https://www.linkedin.com/in/chalermkhwan-nasritha-353963197/" target="_blank"><i class="fab fa-linkedin"></i></i></a></div>
+  <div class="social-icon"><a href="mailto:Chalermkhwan.b.n@gmail.com"><i class="fas fa-envelope"></i></a></div>
+</div>
+</footer>
+
+</html>
