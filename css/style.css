@@ -180,7 +180,6 @@ span {
 
 .left {
   flex: 30%;
-  text-align: center;
   padding: 20px;
 }
 
@@ -342,13 +341,15 @@ height: 100px;
 @media screen and (max-width: 960px) {
   .wrapper {
     flex-direction: column;
+    margin: 5rem auto 0 auto;
   }
 
   .left {
     margin-top: 3rem;
+     align-content: center;
+    text-align: center;
   }
   .right {
-    flex: 50%;
     text-align: center;
   }
 
@@ -358,11 +359,6 @@ height: 100px;
 
   .desktop-nav {
     display: none;
-  }
-
-  .wrapper {
-    margin-top: 5em;
-
   }
 }
 
