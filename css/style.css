@@ -345,12 +345,13 @@ height: 100px;
   }
 
   .left {
-    margin-top: 3rem;
-     align-content: center;
+    align-content: center;
     text-align: center;
+    margin: 3rem auto 0 auto;
   }
   .right {
     text-align: center;
+    margin: 0 auto;
   }
 
   .card {
