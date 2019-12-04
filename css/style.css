@@ -172,6 +172,8 @@ span {
   color: #a6aa9c;
   font-size: 18px;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 
 }
