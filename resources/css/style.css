@@ -197,20 +197,20 @@ header {
 }
 
 .logo {
-    height: 60px;
+    height: 40px;
     width: auto;
     float: left;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .logo-black { 
     display: none;
-    height: 48px;
+    height: 40px;
     width: auto;
     float: left;
     margin: 5px 0;
-    margin-left: 30px;     
+    margin-left: 20px;     
 }
 
 /* Mobile navi */
@@ -634,6 +634,7 @@ ul {
         position: relative;
         z-index: 9999;
         margin-right:10px;
+        font-size: 16px;
     }
 
     .main-nav {
@@ -697,6 +698,14 @@ ul {
         -ms-flex-direction: column;
         flex-direction: column;
         }
+    
+      .logo {
+    height: 30px;
+  }
+
+  .logo-black {
+    height: 30px;
+  }
 }
 
 
